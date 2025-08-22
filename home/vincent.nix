@@ -18,14 +18,25 @@
   programs.i3status.enable = true;
 
   home.packages = with pkgs; [
+    # Development tools
     neovim
+    git
+    
+    # Languages
     go
     python314
     clang
     nodejs_24
-    git
+
+    # General
     neofetch
+
+    # Web
     firefox
+
+    # helpers
+    maim
+    xclip
   ];
 
   xdg.configFile."alacritty".source = ../dotfiles/alacritty;
