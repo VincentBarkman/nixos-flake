@@ -17,6 +17,15 @@
 
   programs.i3status.enable = true;
 
+  xdg.userDirs = {
+    enable = true;
+    createDirectories = true;
+
+    extraConfig = {
+      projects = "${config.home.homeDirectory}/Documents/projects";
+    };
+  };
+
   home.packages = with pkgs; [
     # Development tools
     neovim
@@ -42,5 +51,4 @@
   xdg.configFile."alacritty".source = ../dotfiles/alacritty;
   xdg.configFile."i3".source = ../dotfiles/i3;
   xdg.configFile."nvim".source = ../dotfiles/nvim;
-
 }

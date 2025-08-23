@@ -23,7 +23,7 @@ font pango:BigBlueTerm437 Nerd Font Mono 9
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id picom --fade-in-step=1 --fade-out-step=1
-exec --no-startup-id feh --bg-scale ./black.png
+exec_always --no-startup-id sh -c 'sleep 1 && feh --bg-scale ./black.png'
 
 exec --no-startup-id hsetroot -solid "#000000"
 

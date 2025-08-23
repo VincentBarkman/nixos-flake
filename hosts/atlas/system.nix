@@ -1,5 +1,7 @@
 { config, pkgs, lib, ... }: {
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 5;
+
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "wifi-1-user-1";
@@ -38,15 +40,6 @@
     xkb.layout = "se";
     libinput.enable = true;
 
-    displayManager.lightdm = {
-      enable = true;
-      greeters.gtk = {
-        enable = true;
-      };
-    };
-
-    displayManager.defaultSession = "none+i3";
-
     windowManager.i3 = {
       enable = true;
       
@@ -59,6 +52,8 @@
       ];
     };
   };
+
+  services.displayManager.ly.enable = true;
 
   services.picom =  {
     enable = true;
