@@ -1,0 +1,62 @@
+draw_bold_text_with_bright_colors = true
+
+[font]
+size = 5.0
+
+[font.normal]
+family = "BigBlueTerm437 Nerd Font"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 1
+
+[font.glyph_offset]
+x = 0
+y = 1
+
+[colors.primary]
+background = "#1e2227" # dark background
+foreground = "#abb2bf" # standard foreground text
+
+[colors.normal]
+black   = "#1e2227" # dark base
+red     = "#e06c75" # soft red
+green   = "#98c379" # muted green
+yellow  = "#e5c07b" # gold-yellow
+blue    = "#61afef" # soft blue
+magenta = "#c678dd" # purple
+cyan    = "#56b6c2" # teal/cyan
+white   = "#abb2bf" # light text
+
+[colors.bright]
+black   = "#5c6370" # bright black (gray)
+red     = "#f44747" # brighter red
+green   = "#a5e075" # bright green
+yellow  = "#f0a45d" # bright orange-yellow
+blue    = "#528bff" # bright blue
+magenta = "#de73ff" # bright purple
+cyan    = "#4cd1e0" # bright cyan
+white   = "#ffffff" # true white
+
+[colors.cursor]
+text   = "#1e2227"
+cursor = "#abb2bf"
+
+[colors.selection]
+text       = "#1e2227"
+background = "#e6e6e6"
+
+[env]
+TERM = "xterm-256color"
+
+# Example keybindings (uncomment if needed)
+# [[keyboard.bindings]]
+# key = "H"
+# mods = "Control|Shift"
+# chars = "\u0002p" # tmux previous-window
+#
+# [[keyboard.bindings]]
+# key = "L"
+# mods = "Control|Shift"
+# chars = "\u0002n" # tmux next-window
