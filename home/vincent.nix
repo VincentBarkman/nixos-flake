@@ -30,22 +30,38 @@
     # Development tools
     neovim
     git
-    
+    gnumake
+    docker
+    gdb
+    valgrind
+    jq
+    sqlite
+    tmux
+
     # Languages
     go
     python314
     clang
     nodejs_24
+    rustup
 
     # General
     neofetch
+    fzf
+    openssl
 
     # Web
     firefox
+    curl
+    wget
+    nmap
 
     # helpers
     maim
     xclip
+
+    # text
+    plantuml
   ];
 
   xdg.configFile."alacritty".source = ../dotfiles/alacritty;
